@@ -13,7 +13,7 @@ class Gigasecond
 		t = birthday
 		"%10.5f" % t.to_f
 
-		gs_anniversary = t + ((10 ** 9))
+		gs_anniversary = t + (10 ** 9)
 		date = Time.at(gs_anniversary)
 
 		return date
