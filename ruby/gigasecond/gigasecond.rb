@@ -5,10 +5,10 @@
 
 class Gigasecond
 
-	VERSION = 1
+  VERSION = 1
 
-	def self.from(birthday)
-		return birthday + (10 ** 9)
-	end
+  def self.from(birthday)
+    return birthday + (10 ** 9)
+  end
 
 end
