@@ -5,50 +5,50 @@
 
 class Complement
 
-	def self.of_dna(dna)
-		rna = ''
+  def self.of_dna(dna)
+    rna = ''
 
-		dna.each_char do |nucleotide|
-			case nucleotide
-			when 'G'
-				rna << 'C'
-			when 'C'
-				rna << 'G'
-			when 'T'
-				rna << 'A'
-			when 'A'
-				rna << 'U'
-			else
-				raise ArgumentError.new("Invalid input")
-			end
+    dna.each_char do |nucleotide|
+      case nucleotide
+      when 'G'
+        rna << 'C'
+      when 'C'
+        rna << 'G'
+      when 'T'
+        rna << 'A'
+      when 'A'
+        rna << 'U'
+      else
+        raise ArgumentError.new("Invalid input")
+      end
 
-		end
+    end
 
-		return rna
+    return rna
 
-	end
+  end
 
-	def self.of_rna(rna)
-		dna = ''
+  def self.of_rna(rna)
+    dna = ''
 
-		rna.each_char do |nucleotide|
-			case nucleotide
-			when 'C'
-				dna << 'G'
-			when 'G'
-				dna << 'C'
-			when 'A'
-				dna << 'T'
-			when 'U'
-				dna << 'A'
-			else
-				raise ArgumentError.new("Invalid input")
-			end
+    rna.each_char do |nucleotide|
+      case nucleotide
+      when 'C'
+        dna << 'G'
+      when 'G'
+        dna << 'C'
+      when 'A'
+        dna << 'T'
+      when 'U'
+        dna << 'A'
+      else
+        raise ArgumentError.new("Invalid input")
+      end
 
-		end
+    end
 
-		return dna
+    return dna
 
-	end
+  end
 
 end
