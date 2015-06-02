@@ -1,53 +1,33 @@
 # assignment 4: RNA transcription
 # author: Jason Morse
-# date: May 31, 2015
+# date: May 31, 2015; updated: June 1, 2015
 # 
 
 class Complement
 
+  attr_accessor :dna_translations
+  attr_accessor :rna_translations
+
   def self.of_dna(dna)
-    rna = ''
+    @dna_translations = { 'G' => 'C', 'C' => 'G', 'T' => 'A', 'A' => 'U' }
 
     dna.each_char do |nucleotide|
-      case nucleotide
-      when 'G'
-        rna << 'C'
-      when 'C'
-        rna << 'G'
-      when 'T'
-        rna << 'A'
-      when 'A'
-        rna << 'U'
-      else
-        raise ArgumentError.new("Invalid input")
-      end
-
+      raise ArgumentError, 'Invalid input' if !@dna_translations.has_key?(nucleotide)
     end
 
-    return rna
+    dna.split('').map {|nucleotide| @dna_translations[nucleotide]}.join
 
   end
 
   def self.of_rna(rna)
-    dna = ''
+    #@rna_translations = @dna_translations.invert <-- sometimes 'undefined method'
+    @rna_translations = { 'C' => 'G', 'G' => 'C', 'A' => 'T', 'U' => 'A' }
 
     rna.each_char do |nucleotide|
-      case nucleotide
-      when 'C'
-        dna << 'G'
-      when 'G'
-        dna << 'C'
-      when 'A'
-        dna << 'T'
-      when 'U'
-        dna << 'A'
-      else
-        raise ArgumentError.new("Invalid input")
-      end
-
+      raise ArgumentError, 'Invalid input' if !@rna_translations.has_key?(nucleotide)
     end
 
-    return dna
+    rna.split('').map {|nucleotide| @rna_translations[nucleotide]}.join
 
   end
 

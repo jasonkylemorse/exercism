@@ -8,7 +8,7 @@ class Gigasecond
   VERSION = 1
 
   def self.from(birthday)
-    return birthday + (10 ** 9)
+    birthday + (10 ** 9)
   end
 
 end

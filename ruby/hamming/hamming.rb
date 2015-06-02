@@ -12,11 +12,9 @@ class Hamming
 
     raise ArgumentError.new("Sequences are different lengths") unless strand1.length == strand2.length
     
-    strand1.split("").each_with_index do |char, index|
+    strand1.chars.each_with_index do |char, index|
       mutations += 1 if char != strand2[index]
     end
-
-    return mutations
 
   end
 
