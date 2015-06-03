@@ -1,6 +1,6 @@
 # assignment 2: hamming
 # author: Jason Morse
-# date: May 31, 2015
+# date: May 31, 2015, updated June 2, 2015
 # 
 
 class Hamming
@@ -15,6 +15,8 @@ class Hamming
     strand1.chars.each_with_index do |char, index|
       mutations += 1 if char != strand2[index]
     end
+
+    mutations
 
   end
 
