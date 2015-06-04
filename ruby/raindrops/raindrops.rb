@@ -1,6 +1,6 @@
-# file: randrops.rb
+# assignment: raindrops
 # author: Jason Morse
-# date: May 31, 2015
+# date: May 31, 2015; updated: June 3, 2015
 # 
 
 require 'prime'
@@ -8,16 +8,14 @@ require 'prime'
 class Raindrops
 
   def self.convert(number)
-    output = ''
-
-    array_of_primes = number.prime_division.map(&:first) + number.prime_division.map(&:last)
+    output = ""
     
-    output << 'Pling' if array_of_primes.include?(3)
-    output << 'Plang' if array_of_primes.include?(5)
-    output << 'Plong' if array_of_primes.include?(7)
-    output << number.to_s if (!array_of_primes.include?(3) && !array_of_primes.include?(5) && !array_of_primes.include?(7))
+    output << "Pling" if number % 3 == 0
+    output << "Plang" if number % 5 == 0
+    output << "Plong" if number % 7 == 0
+    output << number.to_s if output == ""
     
-    return output
+    output
 
   end
 

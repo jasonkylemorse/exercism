@@ -1,10 +1,9 @@
-# file: squares.rb
+# assignment: difference of squares
 # author: Jason Morse
-# date: June 1, 2015
+# date: June 1, 2015; updated: June 3, 2015
 # 
 
 class Squares
-  attr_accessor :number
 
   def initialize(number)
     @number = number
@@ -12,28 +11,18 @@ class Squares
 
   def square_of_sums
     result = 0
-
-    (0..@number).each do |num|
-      result += num
-    end
-
-    return result**2
-
+    (0..@number).each { |num| result += num }
+    result ** 2
   end
 
   def sum_of_squares
     result = 0
-
-    (0..@number).each do |num|
-      result += (num**2)
-    end
-
-    return result
-
+    (0..@number).each { |num| result += (num ** 2) }
+    result
   end
 
   def difference
-    return square_of_sums - sum_of_squares
+    square_of_sums - sum_of_squares
   end
 
 end

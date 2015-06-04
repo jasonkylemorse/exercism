@@ -8,13 +8,11 @@ class Hamming
   VERSION = 1
 
   def self.compute(strand1, strand2)
-    mutations = 0
 
-    raise ArgumentError.new("Sequences are different lengths") unless strand1.length == strand2.length
-    
-    strand1.chars.each_with_index do |char, index|
-      mutations += 1 if char != strand2[index]
-    end
+    raise ArgumentError, "Sequences are different lengths" unless strand1.length == strand2.length
+
+    mutations = 0
+    strand1.chars.each_with_index { |nucleotide, index| mutations += 1 if nucleotide != strand2[index] }
 
     mutations
 
