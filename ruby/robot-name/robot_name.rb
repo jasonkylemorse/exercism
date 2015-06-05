@@ -12,11 +12,7 @@ class Robot
   end
 
   def name
-    if @name == nil
-      text = (0...2).map { (65 + rand(26)).chr }.join
-      num = rand(100..999).to_s
-      @name = text << num
-    end
+    initialize if @name == nil
     @name
   end
 
