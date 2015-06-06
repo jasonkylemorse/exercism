@@ -1,9 +1,7 @@
 # assignment: raindrops
 # author: Jason Morse
-# date: May 31, 2015; updated: June 3, 2015
+# date: May 31, 2015; updated: June 5, 2015
 # 
-
-require 'prime'
 
 class Raindrops
 
