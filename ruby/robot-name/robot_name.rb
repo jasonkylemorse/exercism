@@ -1,14 +1,12 @@
 # assignment: robot name
 # author: Jason Morse
-# date: June 4, 2015
+# date: June 4, 2015; updated: June 5, 2015
 # 
 
 class Robot
 
   def initialize
-    text = (0...2).map { (65 + rand(26)).chr }.join
-    num = rand(100..999).to_s
-    @name = text << num
+    @name = ('A'..'Z').to_a.sample(2).join << (0..9).to_a.sample(3).join
   end
 
   def name
