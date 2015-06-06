@@ -14,15 +14,15 @@ class Prime
 
     while count < number
       prime_num += 1
-      count += 1 if isPrime?(prime_num)
+      count += 1 if prime?(prime_num)
     end
 
     prime_num
   end
 
-  def isPrime?(n)
+  def prime?(n)
     return false if n < 2
-    (2...((n ** 0.5).to_i + 1)).to_a.all? { |number| n % number != 0 }
+    (2..(n ** 0.5).to_i).to_a.all? { |number| n % number != 0 }
   end
 
 end
