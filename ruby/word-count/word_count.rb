@@ -1,6 +1,6 @@
 # assignment: word count
 # author: Jason Morse
-# date: June 6, 2015
+# date: June 6, 2015; updated: June 7, 2015
 # 
 
 class Phrase
