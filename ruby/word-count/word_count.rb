@@ -11,7 +11,7 @@ class Phrase
 
   def word_count
     count = {}
-    words = @phrase.downcase.scan(/[a-zA-Z0-9]+[']*[a-zA-Z0-9]*/)
+    words = @phrase.downcase.scan(/[a-z0-9]+[']*[a-z0-9]*/)
     words.each do |word| 
       count[word] += 1 if count.has_key?(word)
       count.merge!(word => 1) if !count.has_key?(word)
