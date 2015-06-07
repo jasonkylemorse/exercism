@@ -5,14 +5,10 @@
 
 class Grains
 
-  AMOUNTS = [1]
-
-  while AMOUNTS.size < 64
-      AMOUNTS << (AMOUNTS.last * 2)
-  end
+  AMOUNTS = (0..63).map { |num| 2 ** num }
 
   def self.square(number)
-    AMOUNTS.at(number - 1)
+    AMOUNTS[number - 1]
   end
 
   def self.total
