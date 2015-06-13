@@ -1,7 +1,7 @@
-# assignment: difference of squares
+# assignment 6: difference-of-squares
 # author: Jason Morse
-# date: June 1, 2015; updated: June 3, 2015
-# 
+# date: June 1, 2015; updated: June 12, 2015
+#
 
 class Squares
 
@@ -10,15 +10,11 @@ class Squares
   end
 
   def square_of_sums
-    result = 0
-    (0..@number).each { |num| result += num }
-    result ** 2
+    (0..@number).inject(:+) ** 2
   end
 
   def sum_of_squares
-    result = 0
-    (0..@number).each { |num| result += (num ** 2) }
-    result
+    (0..@number).inject { |sum, num| sum + (num ** 2) }
   end
 
   def difference
