@@ -1,21 +1,20 @@
-# assignment 4: RNA transcription
+# assignment 4: rna-transcription
 # author: Jason Morse
-# date: May 31, 2015; updated: June 5, 2015
-# 
+# date: May 31, 2015; updated: June 12, 2015
+#
 
 class Complement
 
-  DNA_TO_RNA = { 'G' => 'C', 'C' => 'G', 'T' => 'A', 'A' => 'U' }
-  RNA_TO_DNA = DNA_TO_RNA.invert
-
   def self.of_dna(dna)
-    raise ArgumentError, 'Invalid input' unless dna.chars.all? { |nucleotide| DNA_TO_RNA.has_key?(nucleotide) }
-    dna.chars.map {|nucleotide| DNA_TO_RNA[nucleotide]}.join
+    fail ArgumentError, 'Invalid' unless
+      dna.each_char.all? { |nucleotide| 'GCTA'.include?(nucleotide) }
+    dna.tr('GCTA', 'CGAU')
   end
 
   def self.of_rna(rna)
-    raise ArgumentError, 'Invalid input' unless rna.chars.all? { |nucleotide| RNA_TO_DNA.has_key?(nucleotide) }
-    rna.chars.map {|nucleotide| RNA_TO_DNA[nucleotide]}.join
+    fail ArgumentError, 'Invalid' unless
+      rna.each_char.all? { |nucleotide| 'CGAU'.include?(nucleotide) }
+    rna.tr('CGAU', 'GCTA')
   end
 
 end
