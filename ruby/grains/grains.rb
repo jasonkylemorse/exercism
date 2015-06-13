@@ -1,18 +1,16 @@
-# assignment: grains
+# assignment 11: grains
 # author: Jason Morse
-# date: June 6, 2015
-# 
+# date: June 6, 2015; updated: June 13, 2015
+#
 
 class Grains
 
-  AMOUNTS = (0..63).map { |num| 2 ** num }
-
   def self.square(number)
-    AMOUNTS[number - 1]
+    2 ** (number - 1)
   end
 
   def self.total
-    AMOUNTS.inject(:+)
+    (0..63).inject(0) { |sum, num| sum + (2 ** num) }
   end
 
 end
