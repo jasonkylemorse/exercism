@@ -6,7 +6,7 @@
 class Robot
 
   def generate_name
-    ('A'..'Z').to_a.sample(2).join << (0..9).to_a.sample(3).join
+    ('A'..'Z').sample(2).join << (0..9).to_a.sample(3).join
   end
 
   def name
