@@ -1,7 +1,7 @@
-# assignment: word count
+# assignment 12: word-count
 # author: Jason Morse
-# date: June 6, 2015; updated: June 7, 2015
-# 
+# date: June 6, 2015; updated: June 13, 2015
+#
 
 class Phrase
 
@@ -12,8 +12,8 @@ class Phrase
   def word_count
     count = {}
     words = @phrase.downcase.scan(/[a-z0-9]+[']*[a-z0-9]*/)
-    words.each { |word| count.has_key?(word) ? count[word] += 1 : count.merge!(word => 1) }
-    count 
+    words.each { |word| count.key?(word) ? count[word] += 1 : count.merge!(word => 1) }
+    count
   end
 
 end
