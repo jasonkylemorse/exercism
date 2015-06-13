@@ -1,7 +1,7 @@
 # assignment 3: gigasecond
 # author: Jason Morse
-# date: May 31, 2015
-# 
+# date: May 31, 2015; updated: June 12, 2015
+#
 
 class Gigasecond
 
