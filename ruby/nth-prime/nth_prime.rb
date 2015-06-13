@@ -1,12 +1,12 @@
 # assignment 9: nth-prime
 # author: Jason Morse
-# date: June 6, 2015; updated: June 12, 2015
+# date: June 6, 2015; updated: June 13, 2015
 #
 
 class Prime
 
   def nth(number)
-    fail ArgumentError, 'Invalid' unless number > 0
+    fail ArgumentError, 'Number must be greater than 0' unless number > 0
     count = 0
     prime_num = 1
 
