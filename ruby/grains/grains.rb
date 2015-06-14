@@ -1,6 +1,6 @@
 # assignment 11: grains
 # author: Jason Morse
-# date: June 6, 2015; updated: June 13, 2015
+# date: June 6, 2015; updated: June 14, 2015
 #
 
 class Grains
@@ -10,7 +10,7 @@ class Grains
   end
 
   def self.total
-    (0..63).inject(0) { |sum, num| sum + (2 ** num) }
+    (2 ** 64) - 1
   end
 
 end
