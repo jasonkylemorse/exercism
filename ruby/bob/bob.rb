@@ -1,6 +1,6 @@
 # assignment 13: bob
 # author: Jason Morse
-# date: June 10, 2015
+# date: June 10, 2015; updated: June 14, 2015
 #
 
 class Bob
