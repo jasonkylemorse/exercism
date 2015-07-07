@@ -6,11 +6,11 @@
 class School
 
   def initialize
-    @students = Hash.new
+    @students = {}
   end
 
   def add(name, grade)
-    if !@students.has_key?(grade)
+    if !@students.key?(grade)
       @students[grade] = [name]
     else
       @students[grade] << name
@@ -19,7 +19,7 @@ class School
   end
 
   def grade(grade)
-    return [] unless @students.has_key?(grade)
+    return [] unless @students.key?(grade)
     @students[grade]
   end
 
