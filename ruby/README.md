@@ -131,3 +131,8 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Comments
  * Had to monkey patch class `Array`.
  * You can 'pass' a block as an argument using `def function(&block)` and then refer to it using `block.call(element)`.
+
+#####assignment 24: etl
+* Goal – Transform the legacy data format (point value => letters) to the new format (letter => point value).
+* Comments
+ * `flatten` method is useful for extracting all data from nested arrays into the same level
