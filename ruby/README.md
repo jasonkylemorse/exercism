@@ -89,7 +89,7 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 #####assignment 16: binary
 * Goal – Given a number, return its value in binary.
 * Comments
- * Learned that you can call an Enumerable object without a block, and essentially combine the functionality of two methods. 
+ * Learned that you can call an Enumerable method without a block, and essentially combine the functionality of two methods. 
  * Contains syntax for the ternary `?` operation.
 
 #####assignment 17: accumulate
