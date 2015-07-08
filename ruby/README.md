@@ -135,4 +135,4 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 #####assignment 24: etl
 * Goal – Transform the legacy data format (point value => letters) to the new format (letter => point value).
 * Comments
- * `flatten` method is useful for extracting all data from nested arrays into the same level
+ * `flatten` method is useful for extracting all data from nested arrays into the same level.
