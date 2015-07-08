@@ -136,3 +136,8 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Goal – Transform the legacy data format (point value => letters) to the new format (letter => point value).
 * Comments
  * `flatten` method is useful for extracting all data from nested arrays into the same level.
+
+#####assignment 25: trinary
+* Goal – Given a trinary number, return its value in base 10.
+* Comments
+ * Took a very similar approach as I did in assignment 16 (binary).
