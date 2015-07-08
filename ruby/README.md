@@ -19,7 +19,7 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 #####assignment 3: gigasecond
 * Goal – Calculate the date of a person's 1 gigasecond anniversary.
 * Comments
- * Ruby is nice :-)
+ * As simple as adding the number of seconds to the birthday. Ruby is nice :-)
 
 #####assignment 4: rna-transcription
 * Goal – Given a DNA strand, return its RNA complement, and vice versa.
@@ -27,7 +27,7 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
  * `tr` method made this extremely simple after a lot of pain. Should probably read the docs. Useful for replacing chars with other chars.
 
 #####assignment 5: raindrops
-* Goal – If the provided number contains 3, 5, or 7 as a prime factor, then append to the output string 'Pling', 'Plang', and 'Plong', respectively.
+* Goal – If the provided number contains `3`, `5`, or `7` as a prime factor, then append to the output string `'Pling'`, `'Plang'`, and `'Plong'`, respectively.
 * Comments
  * Generated a huge list of prime factors at first, which was very silly because `%` can handle the three cases just as well, but with significantly less work.
 
