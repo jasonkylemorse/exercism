@@ -32,9 +32,9 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
  * Generated a huge list of prime factors at first, which was very silly because `%` can handle the three cases just as well, but with significantly less work.
 
 #####assignment 6: difference-of-squares
-* Goal – Find the difference between the sum of squares and the square of sums of the first N natural numbers.
+* Goal – Find the difference between the sum of squares and the square of sums of the first `n` natural numbers.
 * Comments
- * Needed an `initialize` method this time because we want to create an object that retains the provided value of N. 
+ * Needed an `initialize` method this time because we want to create an object that retains the provided value of `n`. 
  * `inject` is a very nice method for summing values.
 
 #####assignment 7: roman-numerals
@@ -51,7 +51,7 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
  * `x ||= y` used to say "assign `x` equal to `y` but only if `x` has no value".
  
 #####assignment 9: nth-prime
-* Goal – Determine what the nth prime number is.
+* Goal – Determine what the `nth` prime number is.
 * Comments 
  * Contains syntax for marking a method private.
  
