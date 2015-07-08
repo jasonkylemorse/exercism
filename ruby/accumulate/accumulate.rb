@@ -6,13 +6,11 @@
 class Array
 
   def accumulate
-    accumulated = []
-
+    result = []
     each do |element|
-      accumulated << (yield element)
+      result << (yield element)
     end
-
-    accumulated
+    result
   end
 
 end
