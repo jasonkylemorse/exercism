@@ -107,18 +107,18 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 #####assignment 19: grade-school
 * Goal – Write an archiving program that keeps track of students' names and the grade that they are in.
 * Comments
- * `sort` methof useful for organizing lists
+ * `sort` method useful for organizing lists
 
 #####assignment 20: series
-* Goal – Given a string of digits and a number n, return all possible consecutive number series of length n contained in that string. 
+* Goal – Given a string of digits and a number `n`, return all possible consecutive number series of length `n` contained in that string. 
 * Comments
  * `map` method useful for calling a method on each element in a large collection of values.
 
 #####assignment 21: phone-number
 * Goal – Clean up a user-entered phone number.
 * Comments
- * `=~` is shorthand for a regex `scan`
- * `slice` method useful for removing a char
+ * `=~` is shorthand for a regex `scan`.
+ * `slice` method useful for removing a char.
 
 #####assignment 22: prime-factors
 * Goal – Compute the prime factors of a given natural number.
