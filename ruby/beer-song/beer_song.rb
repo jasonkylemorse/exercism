@@ -24,7 +24,7 @@ class BeerSong
 
   def verses(first, last)
     result = ''
-    (last..first).to_a.reverse_each { |i| result << verse(i) << "\n" }
+    (last..first).reverse_each { |i| result << verse(i) << "\n" }
     result
   end
 
