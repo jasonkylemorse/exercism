@@ -146,3 +146,9 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Goal – Write a program that will output the lyrics of the "99 bottles of beer on the wall" song.
 * Comments
  * Not difficult but this could be a lot cleaner and refactored into multiple methods. Will likely return to this later.
+
+#####assignment 27: space-age
+* Goal – Write a program that, given an age in seconds, calculates how old someone is in terms of a given planet's solar years.
+* Comments
+ * `to_f` converts to type `float`, which is needed for precise division
+ * `attr_accessor` allows access to particular variables within the object
