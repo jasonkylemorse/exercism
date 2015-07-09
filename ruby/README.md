@@ -152,3 +152,9 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Comments
  * `to_f` converts to type `float`, which is needed for precise division
  * `attr_accessor` allows access to particular variables within the object
+
+#####assignment 28: anagram
+* Goal – Write a program that, given a word and a list of possible anagrams, selects the correct sublist.
+* Comments
+ * Apparently case must match at the same char index (ex: Orchestra & Carthorse). That's why I wrote the `case` method and used it in line 17. 
+ * As seen before in assignment 20, you can make a shorthand `map` call as follows: `map(:&downcase)`.
