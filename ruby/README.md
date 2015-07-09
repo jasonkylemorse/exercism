@@ -141,3 +141,8 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Goal – Given a trinary number, return its value in base 10.
 * Comments
  * Took a very similar approach as I did in assignment 16 (binary).
+
+#####assignment 26: beer-song
+* Goal – Write a program that will output the lyrics of the "99 bottles of beer on the wall" song.
+* Comments
+ * Not difficult but this could be a lot cleaner and refactored into multiple methods. Will likely return to this later.
