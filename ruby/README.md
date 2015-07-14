@@ -158,3 +158,10 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Comments
  * Apparently case must match at the same char index (ex: Orchestra & Carthorse). That's why I wrote the `case` method and used it in line 17. 
  * As seen before in assignment 20, you can make a shorthand `map` call as follows: `map(:&downcase)`.
+
+
+#####assignment 29: binary-search-tree
+* Goal – Write a program that inserts numbers and searches in a binary tree.
+* Comments
+ * At first I made a separate class file to represent a `Node` object. Later realized how much more sense it makes to simply nest `Bst` objects onto the left and right branches of the parent.
+ * Stole the `each` function from the problem's solution. Still not entirely sure how `&block` as an argument works. I do understand conceptually that this performs an in-order traversal of the tree but can't find any good sources at the moment.
