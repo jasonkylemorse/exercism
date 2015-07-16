@@ -165,3 +165,9 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 * Comments
  * At first I made a separate class file to represent a `Node` object. Later realized how much more sense it makes to simply nest `Bst` objects onto the left and right branches of the parent.
  * Stole the `each` function from the problem's solution. Still not entirely sure how `&block` as an argument works. I do understand conceptually that this performs an in-order traversal of the tree but can't find any good sources at the moment.
+
+#####assignment 30: crypto-square
+* Goal – Implement the classic method for composing secret messages called a square code.
+* Comments
+ * Stupid mistake--remember that `each` only iterates through a number of elements. If you want to actually manipulate the data, use `map`. (Spent way too long hung up on that.)
+ * It's much easier to just normalize the ciphertext within the same method, but I had to leave `ciphertext` in there to make all the tests pass. Normalizing just involves adding spaces, so it makes more sense to add these spaces in while looping through the chars in the first place.
