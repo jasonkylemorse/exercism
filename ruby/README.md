@@ -169,5 +169,9 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
 #####assignment 30: crypto-square
 * Goal – Implement the classic method for composing secret messages called a square code.
 * Comments
- * Stupid mistake--remember that `each` only iterates through a number of elements. If you want to actually manipulate the data, use `map`. (Spent way too long hung up on that.)
  * It's much easier to just normalize the ciphertext within the same method, but I had to leave `ciphertext` in there to make all the tests pass. Normalizing just involves adding spaces, so it makes more sense to add these spaces in while looping through the chars in the first place.
+ * `chop` method is useful for removing the final char of a string.
+ * `nil?` predicate is more idiomatic than `if x == nil`.
+ * `each_slice(x)` method is useful for splitting a string into segments of length `x`.
+ * `ceil` method is useful for rounding up to the next integer.
+ * Remember that `each` only iterates through a number of elements. If you want to actually manipulate the data, use `map`. (Spent way too long hung up on that.)
