@@ -190,3 +190,8 @@ like Portable Network Graphics to its acronym (PNG).
 * Comments
  * Spent most time on this one coming up with the proper regex (needed to account for words like 'HyperText', which contain an internal capital letter).
  * `collect` method is a cleaner way of doing something like `result = ''` and then appending to `result` during each iteration of an enumerable object.
+
+#####assignment 33: scrabble-score
+* Goal – Write a program that, given a word, computes the scrabble score for that word.
+* Comments
+ * `gsub` method useful for replacing all matches in a string with something else.
