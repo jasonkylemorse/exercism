@@ -175,3 +175,11 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
  * `each_slice(x)` method is useful for splitting a string into segments of length `x`.
  * `ceil` method is useful for rounding up to the next integer.
  * Remember that `each` only iterates through a number of elements. If you want to actually manipulate the data, use `map`. (Spent way too long hung up on that.)
+
+
+#####assignment 31: clock
+* Goal – Implement a clock that handles times without dates. You should be able to add and subtract minutes to it. Two clocks that represent the same time should be equal to each other.
+* Comments
+ * `Time` class made this very nice. `strftime` is really useful because it lets you print time in pretty much any format.
+ * You can implement your own versions of `+`, `-`, `==`, etc. without monkey patching.
+ * You can force initialization if the user doesn't create objects with `Class.new` by simply calling `new` in whatever function they call first.
