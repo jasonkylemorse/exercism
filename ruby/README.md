@@ -195,3 +195,9 @@ like Portable Network Graphics to its acronym (PNG).
 * Goal – Write a program that, given a word, computes the scrabble score for that word.
 * Comments
  * `gsub` method useful for replacing all matches in a string with something else.
+
+#####assignment 34: nucleotide-count
+* Goal – Given a DNA string, compute how many times each nucleotide occurs in the string.
+* Comments
+ * Not much new here.
+ * `histogram` method wasn't recognized until I rebuilt the program with an initializer.
