@@ -201,3 +201,8 @@ like Portable Network Graphics to its acronym (PNG).
 * Comments
  * Not much new here.
  * `histogram` method wasn't recognized until I rebuilt the program with an initializer.
+
+#####assignment 35: hexadecimal
+* Goal – Write a program that will convert a hexadecimal number, represented as a string (e.g. "10af8c"), to its decimal equivalent using first principles.
+* Comments
+ * Same approach I used in binary and trinary. This time I used a hash to store values for `0-9a-f` since there are letters in base 16. 
