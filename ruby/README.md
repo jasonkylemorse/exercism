@@ -183,3 +183,10 @@ This folder contains practice Ruby problems from exercism.io. I'll be using this
  * `Time` class made this very nice. `strftime` is really useful because it lets you print time in pretty much any format.
  * You can implement your own versions of `+`, `-`, `==`, etc. without monkey patching.
  * You can force initialization if the user doesn't create objects with `Class.new` by simply calling `new` in whatever function they call first.
+
+#####assignment 32: acronym
+* Goal – Help generate some jargon by writing a program that converts a long name
+like Portable Network Graphics to its acronym (PNG).
+* Comments
+ * Spent most time on this one coming up with the proper regex (needed to account for words like 'HyperText', which contain an internal capital letter).
+ * `collect` method is a cleaner way of doing something like `result = ''` and then appending to `result` during each iteration of an enumerable object.
