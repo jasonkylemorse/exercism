@@ -206,3 +206,10 @@ like Portable Network Graphics to its acronym (PNG).
 * Goal – Write a program that will convert a hexadecimal number, represented as a string (e.g. "10af8c"), to its decimal equivalent using first principles.
 * Comments
  * Same approach I used in binary and trinary. This time I used a hash to store values for `0-9a-f` since there are letters in base 16. 
+
+#####assignment 36: say
+* Goal – Write a program that will take a number from 0 to 999,999,999,999 and spell out that number in English.
+* Comments
+ * This was pretty difficult mainly because there were many scenarios to take into account. For example, preventing things like: `101` --> `one hundred zero one`. Almost all aggravations involved `zero` messing things up, actually.
+ * The way I interweave billion, million, and thousand into the correct spots is really gross. I want to come back to this and make it nicer. It's also too complex according to a `Rubocop` analysis.
+ * Also, based on the `Rubocop` analysis, the brnach condition size is too large for `translate` and `group_of_3`. Should come back to this. 
