@@ -1,6 +1,6 @@
 # assignment 36: say
 # author: Jason Morse
-# date: July 24, 2015
+# date: July 24, 2015; updatedL July 25, 2015
 #
 
 class Say
@@ -70,7 +70,7 @@ class Say
 
   def group_of_2(num)
     return '' if num == 0
-    return NUMS[@num] if NUMS.key?(@num)
+    return NUMS[num] if NUMS.key?(num)
     tens_val = NUMS[num.to_s[0].to_i * 10]
     ones_val = group_of_1(num.to_s[1].to_i)
     ones_val.empty? ? "#{tens_val}" : "#{tens_val}-#{ones_val}"
