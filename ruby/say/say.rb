@@ -1,6 +1,6 @@
 # assignment 36: say
 # author: Jason Morse
-# date: July 24, 2015; updatedL July 25, 2015
+# date: July 24, 2015; updated: July 25, 2015
 #
 
 class Say
