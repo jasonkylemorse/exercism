@@ -212,4 +212,4 @@ like Portable Network Graphics to its acronym (PNG).
 * Comments
  * This was pretty difficult mainly because there were many scenarios to take into account. For example, preventing things like: `101` --> `one hundred zero one`. Almost all aggravations involved `zero` messing things up, actually.
  * The way I interweave billion, million, and thousand into the correct spots is really gross. I want to come back to this and make it nicer. It's also too complex according to a `Rubocop` analysis.
- * Also, based on the `Rubocop` analysis, the brnach condition size is too large for `translate` and `group_of_3`. Should come back to this. 
+ * Also, based on the `Rubocop` analysis, the branch condition size is too large for `translate` and `group_of_3`. Should come back to this. 
