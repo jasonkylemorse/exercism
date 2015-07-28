@@ -217,5 +217,12 @@ like Portable Network Graphics to its acronym (PNG).
 #####assignment 37: meetup
 * Goal – Calculate the date of meetups. Typically meetups happen on the same day of the week. Examples are: the first Monday, the third Tuesday, the Wednesteenth, the last Thursday.
 * Comments
- * `wday` method useful for assigning a numerical value to each weekday (0-6 -> Sunday-Saturday)
+ * `wday` method useful for assigning a numerical value to each weekday (0-6 -> Sunday-Saturday).
  * Cyclomatic complexity of `day` is too high, but I'm not sure how I could condense that method while still maintaining readability.
+
+#####assignment 38: queen-attack
+* Goal – Write a program that positions two queens on a chess board and indicates whether or not they are positioned so that they can attack each other. In the game of chess, a queen can attack pieces which are on the same
+row, column, or diagonal.
+* Comments
+ * This contains a good example of multi-line strings.
+ * There should be a better way to check diagonals. If the queens are of equal distance from the center of the diagonal, then the absolute value of `black[1] - black[0]` should equal the absolute value of `white[1] - white[0]`. This seems like a good way to check but it doesn't account for all possiblities--for example [1, 3] and [2, 2]. Can they ever be right next to each other like that? I don't know chess :( (so anyway, right now those methods are wasteful).
