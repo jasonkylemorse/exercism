@@ -226,3 +226,8 @@ row, column, or diagonal.
 * Comments
  * This contains a good example of multi-line strings.
  * There should be a better way to check diagonals. If the queens are of equal distance from the center of the diagonal, then the absolute value of `black[1] - black[0]` should equal the absolute value of `white[1] - white[0]`. This seems like a good way to check but it doesn't account for all possiblities--for example [1, 3] and [2, 2]. Can they ever be right next to each other like that? I don't know chess :( (so anyway, right now those methods are wasteful).
+
+#####assignment 39: palindrome-products
+* Goal – Write a program that can detect palindrome products in a given range.
+* Comments
+ * Description was really vague so I cheated on this one. Makes sense after looking at the solution.
