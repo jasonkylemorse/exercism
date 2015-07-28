@@ -213,3 +213,9 @@ like Portable Network Graphics to its acronym (PNG).
  * This was pretty difficult mainly because there were many scenarios to take into account. For example, preventing things like: `101` --> `one hundred zero one`. Almost all aggravations involved `zero` messing things up, actually.
  * The way I interweave billion, million, and thousand into the correct spots is really gross. I want to come back to this and make it nicer. It's also too complex according to a `Rubocop` analysis.
  * Also, based on the `Rubocop` analysis, the branch condition size is too large for `translate` and `group_of_3`. Should come back to this. 
+
+#####assignment 37: meetup
+* Goal – Calculate the date of meetups. Typically meetups happen on the same day of the week. Examples are: the first Monday, the third Tuesday, the Wednesteenth, the last Thursday.
+* Comments
+ * `wday` method useful for assigning a numerical value to each weekday (0-6 -> Sunday-Saturday)
+ * Cyclomatic complexity of `day` is too high, but I'm not sure how I could condense that method while still maintaining readability.
