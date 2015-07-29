@@ -236,3 +236,8 @@ row, column, or diagonal.
 * Goal – Write a program that, given a string representing a matrix of numbers, can return the rows and columns of that matrix.
 * Comments
  * `transpose` method is a really nice way of accessing columns in a two-dimensional array.
+
+#####assignment 41: saddle-points
+* Goal – Write a program that detects saddle points in a matrix.
+* Comments
+ * Pretty simple. Just an extension on assignment 40.
