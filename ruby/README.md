@@ -231,3 +231,8 @@ row, column, or diagonal.
 * Goal – Write a program that can detect palindrome products in a given range.
 * Comments
  * Description was really vague so I cheated on this one. Makes sense after looking at the solution.
+
+#####assignment 40: matrix
+* Goal – Write a program that, given a string representing a matrix of numbers, can return the rows and columns of that matrix.
+* Comments
+ * `transpose` method is a really nice way of accessing columns in a two-dimensional array.
