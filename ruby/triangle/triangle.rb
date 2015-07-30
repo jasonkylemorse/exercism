@@ -1,6 +1,6 @@
 # assignment 42: triangle
 # author: Jason Morse
-# date: July 29, 2015
+# date: July 30, 2015
 #
 
 class Triangle
