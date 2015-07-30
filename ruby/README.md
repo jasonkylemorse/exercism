@@ -247,3 +247,8 @@ row, column, or diagonal.
 * Comments
  * Pretty simple to write everything out explicitly, but it became much simpler when I sorted the three legs of the triangle by size. That way, to check for errors you can simply look at the smaller two sides, or just the smallest side, rather than checking each case.
  * You can create custom error classes by inheriting from `StandardError` like so: `class TriangleError < StandardError end`.
+
+#####assignment 43: atbash-cipher
+* Goal – Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East. The Atbash cipher is a simple substitution cipher that relies on transposing all the letters in the alphabet such that the resulting alphabet is backwards. The first letter is replaced with the last letter, the second with the second-last, and so on.
+* Comments
+ * Wondering if there's a way to use `collect` in `self.swap_chars`.
