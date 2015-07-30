@@ -258,3 +258,8 @@ row, column, or diagonal.
 * Comments
  * Can use `reverse_each` method instead of `reverse.each`.
  * Not much new; just recursion.
+
+#####assignment 45: secret-handshake
+* Goal – Write a program that will take a decimal number, and convert it to the appropriate sequence of events for a secret handshake.
+* Comments
+ * When converting a decimal number to a string using `to_s`, you can supply an argument, like `to_s(2)`, to convert the number to the specified base.
