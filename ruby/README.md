@@ -252,3 +252,9 @@ row, column, or diagonal.
 * Goal – Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East. The Atbash cipher is a simple substitution cipher that relies on transposing all the letters in the alphabet such that the resulting alphabet is backwards. The first letter is replaced with the last letter, the second with the second-last, and so on.
 * Comments
  * Wondering if there's a way to use `collect` in `self.swap_chars`.
+
+#####assignment 44: house
+* Goal – Write a program that outputs the nursery rhyme 'This is the House that Jack Built'.
+* Comments
+ * Can use `reverse_each` method instead of `reverse.each`.
+ * Not much new; just recursion.
