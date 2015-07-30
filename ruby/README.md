@@ -241,3 +241,9 @@ row, column, or diagonal.
 * Goal – Write a program that detects saddle points in a matrix.
 * Comments
  * Pretty simple. Just an extension on assignment 40.
+
+#####assignment 42: triangle
+* Goal – Write a program that can tell you if a triangle is equilateral, isosceles, or scalene. The program should raise an error if the triangle cannot exist.
+* Comments
+ * Pretty simple to write everything out explicitly, but it became much simpler when I sorted the three legs of the triangle by size. That way, to check for errors you can simply look at the smaller two sides, or just the smallest side, rather than checking each case.
+ * You can create custom error classes by inheriting from `StandardError` like so: `class TriangleError < StandardError end`.
