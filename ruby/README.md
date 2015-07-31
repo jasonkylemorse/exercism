@@ -263,3 +263,8 @@ row, column, or diagonal.
 * Goal – Write a program that will take a decimal number, and convert it to the appropriate sequence of events for a secret handshake.
 * Comments
  * When converting a decimal number to a string using `to_s`, you can supply an argument, like `to_s(2)`, to convert the number to the specified base.
+
+#####assignment 46: proverb
+* Goal – For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Write a program that outputs the full text of this proverbial rhyme.
+* Comments
+ * Another good example of dealing with optional arguments.
