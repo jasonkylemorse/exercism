@@ -268,3 +268,8 @@ row, column, or diagonal.
 * Goal – For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Write a program that outputs the full text of this proverbial rhyme.
 * Comments
  * Another good example of dealing with optional arguments.
+
+#####assignment 47: ocr-numbers
+* Goal – Write a program that, given a 3 x 4 grid of pipes, underscores, and spaces, can determine which number is represented, or whether it is garbled.
+* Comments
+ * This was pretty difficult to think through, but not much is new.
