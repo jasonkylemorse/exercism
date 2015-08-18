@@ -272,4 +272,9 @@ row, column, or diagonal.
 #####assignment 47: ocr-numbers
 * Goal – Write a program that, given a 3 x 4 grid of pipes, underscores, and spaces, can determine which number is represented, or whether it is garbled.
 * Comments
- * This was pretty difficult to think through, but not much is new.
+ * This was pretty challenging to think through, but it works! Not much new.
+
+#####assignment 48: pig-latin
+* Goal – Implement a program that translates from English to Pig Latin
+* Comments
+ * This is a REALLY dirty solution and horribly inefficient. Will come back to this.
