@@ -7,6 +7,7 @@
 var HelloWorld = function() {};
 
 HelloWorld.prototype.hello = function(input) {
+	process.stdout.write("hello there");
 	if (input == '') {
 		return 'Hello, World!';
 	} else {
